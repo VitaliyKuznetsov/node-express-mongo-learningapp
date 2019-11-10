@@ -1,7 +1,8 @@
-var rect = {
-    primeter: (x,y) => (2*(x+y)),
-    area: (x,y) => (x*y)
-};
+// var rect = {
+//     perimeter: (x,y) => (2*(x+y)),
+//     area: (x,y) => (x*y)
+// };
+var rect = require("./rectangle");
 
 function solveRect(l,b) {
     console.log("Solving for rectangle with l = "+l+" and b = "+b);
@@ -9,7 +10,7 @@ function solveRect(l,b) {
     if(l<=0||b<=0) console.log("Rectangle dims should be greater then zero: \n\tl is: "+l+"\n\tb is: "+b);
     else{
         console.log("Area of rectangle is: "+rect.area(l,b));
-        console.log("Perimeter of rectangle is: "+rect.primeter(l,b));
+        console.log("Perimeter of rectangle is: "+rect.perimeter(l,b));
     }
 }
 
